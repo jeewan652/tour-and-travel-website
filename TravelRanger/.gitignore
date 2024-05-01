@@ -10,6 +10,8 @@
 
 # production
 /build
+auth.action.js
+login.jsx
 
 # misc
 .DS_Store
