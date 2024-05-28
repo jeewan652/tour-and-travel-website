@@ -88,18 +88,21 @@ function createData(name, detail, fat, carbs, protein) {
 }
 
 function CustomizedTables() {
-  const userData = useSelector((store) => store.auth.user[0]);
+  const userData = useSelector((store) => store.auth?.user?.[0]);
   const displayName = userData?.displayName;
   const [Birthday, setBirthday] = useState("Add+");
   const [Gender, setGender] = useState("Add+");
   const [Marital, setMarital] = useState("Add+");
 
-  const rows = [
-    createData("Name", displayName),
-    createData("Birthday", Birthday),
-    createData("Gender", Gender),
-    createData("Marital Status", Marital),
-  ];
+  let rows = [];
+  if (userData) {
+    rows = [
+      createData("Name", displayName || "N/A"), // Use "N/A" if displayName is undefined
+      createData("Birthday", Birthday),
+      createData("Gender", Gender),
+      createData("Marital Status", Marital),
+    ];
+  }
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
@@ -249,17 +252,18 @@ const Profile = () => {
       .signOut()
       .then(() => {
         dispatch(logoutAction());
-        navigate("/");
+        localStorage.clear(); // Clear local storage
+        navigate("/"); // Navigate to home page
       })
       .catch((error) => {
         console.log(error.message);
       });
   };
-  const userData = useSelector((store) => store.auth.user[0]);
+  const userData = useSelector((store) => store.auth?.user?.[0]);
 
   const profilePic = userData?.photoURL;
-  const displayName = userData.displayName;
-  const userEmail = userData.email;
+  const displayName = userData?.displayName;
+  const userEmail = userData?.email;
   const myRef1 = useRef(null);
   const myRef2 = useRef(null);
 
