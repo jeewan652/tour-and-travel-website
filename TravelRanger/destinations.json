@@ -206,15 +206,60 @@
       "image": "https://hblimg.mmtcdn.com/content/hubble/img/collections/m_honeymoon33_p_540_417.jpg",
       "about": "Your honeymoon has to be the most memorable vacation of your life! Choose from a variety of pocket-friendly destinations from solitary beaches, picturesque hills, snow-clad mountains, relaxing yet exotic resorts to adventurous excursions.",
       "places": [
-        { "id": "", "image": "", "about": "", "subtitle": "" },
-        { "id": "", "image": "", "about": "", "subtitle": "" },
-        { "id": "", "image": "", "about": "", "subtitle": "" },
-        { "id": "", "image": "", "about": "", "subtitle": "" },
-        { "id": "", "image": "", "about": "", "subtitle": "" },
-        { "id": "", "image": "", "about": "", "subtitle": "" },
-        { "id": "", "image": "", "about": "", "subtitle": "" },
-        { "id": "", "image": "", "about": "", "subtitle": "" },
-        { "id": "", "image": "", "about": "", "subtitle": "" }
+        {
+          "id": "Santorini",
+          "image": "https://example.com/santorini.jpg",
+          "subtitle": "Romantic Island Getaway in Greece",
+          "about": "Santorini is known for its stunning sunsets, white-washed buildings, and crystal-clear waters. It's the perfect destination for a romantic honeymoon with its charming streets and luxurious resorts."
+        },
+        {
+          "id": "Bora Bora",
+          "image": "https://example.com/borabora.jpg",
+          "subtitle": "Tropical Paradise in French Polynesia",
+          "about": "Bora Bora offers overwater bungalows, turquoise lagoons, and an incredible marine life experience. Ideal for couples looking to relax in a serene and picturesque environment."
+        },
+        {
+          "id": "Maui",
+          "image": "https://example.com/maui.jpg",
+          "subtitle": "Scenic Hawaiian Island",
+          "about": "Maui is famous for its breathtaking beaches, lush rainforests, and volcanic landscapes. Couples can enjoy a mix of adventure and relaxation in this beautiful island paradise."
+        },
+        {
+          "id": "Venice",
+          "image": "https://example.com/venice.jpg",
+          "subtitle": "Enchanting City of Canals in Italy",
+          "about": "Venice is the perfect destination for a romantic honeymoon with its historic architecture, gondola rides through the canals, and exquisite Italian cuisine."
+        },
+        {
+          "id": "Maldives",
+          "image": "https://example.com/maldives.jpg",
+          "subtitle": "Luxury Overwater Villas",
+          "about": "The Maldives offers luxurious overwater villas, pristine beaches, and crystal-clear waters. It's an ideal destination for couples seeking privacy and a touch of luxury."
+        },
+        {
+          "id": "Paris",
+          "image": "https://example.com/paris.jpg",
+          "subtitle": "City of Love in France",
+          "about": "Paris is synonymous with romance. Couples can explore iconic landmarks like the Eiffel Tower, enjoy world-class dining, and stroll through charming neighborhoods."
+        },
+        {
+          "id": "Phuket",
+          "image": "https://example.com/phuket.jpg",
+          "subtitle": "Exotic Beach Destination in Thailand",
+          "about": "Phuket offers beautiful beaches, vibrant nightlife, and a variety of activities like snorkeling and island hopping. It's a great mix of relaxation and adventure for honeymooners."
+        },
+        {
+          "id": "Kyoto",
+          "image": "https://example.com/kyoto.jpg",
+          "subtitle": "Cultural Heart of Japan",
+          "about": "Kyoto is known for its beautiful temples, traditional tea houses, and stunning gardens. Couples can immerse themselves in the rich culture and serene beauty of Japan."
+        },
+        {
+          "id": "Swiss Alps",
+          "image": "https://example.com/swissalps.jpg",
+          "subtitle": "Winter Wonderland in Switzerland",
+          "about": "The Swiss Alps offer stunning mountain scenery, luxurious chalets, and exciting winter sports. It's the perfect destination for couples looking for a cozy and adventurous honeymoon."
+        }
       ]
     },
     {
@@ -222,15 +267,36 @@
       "image": "https://hblimg.mmtcdn.com/content/hubble/img/collections/m_weekend_p_360_278.jpg",
       "about": "Recharge after a hectic week’s work with an idyllic trip over the weekend. Experience peace at a resort nestled in nature’s lap or feel your heart race with adventure sports. Go ahead, choose the perfect weekend hotspot from this list.",
       "places": [
-        { "id": "", "image": "", "about": "", "subtitle": "" },
-        { "id": "", "image": "", "about": "", "subtitle": "" },
-        { "id": "", "image": "", "about": "", "subtitle": "" },
-        { "id": "", "image": "", "about": "", "subtitle": "" },
-        { "id": "", "image": "", "about": "", "subtitle": "" },
-        { "id": "", "image": "", "about": "", "subtitle": "" },
-        { "id": "", "image": "", "about": "", "subtitle": "" },
-        { "id": "", "image": "", "about": "", "subtitle": "" },
-        { "id": "", "image": "", "about": "", "subtitle": "" }
+        {
+          "id": "Lonavala",
+          "image": "https://hblimg.mmtcdn.com/content/hubble/img/lonavala/mmt/destination/m_destination-lonavala-landscape_l_400_640.jpg",
+          "subtitle": "Hill Station in Maharashtra",
+          "about": "Lonavala is the perfect weekend getaway for city dwellers. You can expect hot and humid weather. Lonavala is also very popular among relaxation-seekers."
+        },
+        {
+          "id": "Matheran",
+          "image": "https://hblimg.mmtcdn.com/content/hubble/img/matheran/mmt/destination/m_destination-matheran-landscape_l_400_640.jpg",
+          "subtitle": "Eco-Sensitive Hill Station in Maharashtra",
+          "about": "Matheran is the perfect weekend getaway for city dwellers. You can expect hot and humid weather. Matheran is also very popular among relaxation-seekers."
+        },
+        {
+          "id": "Mahabaleshwar",
+          "image": "https://hblimg.mmtcdn.com/content/hubble/img/mahabaleshwar/mmt/destination/m_destination-mahabaleshwar-landscape_l_400_640.jpg",
+          "subtitle": "Hill Station in Maharashtra",
+          "about": "Mahabaleshwar is the perfect weekend getaway for city dwellers. You can expect hot and humid weather. Mahabaleshwar is also very popular among relaxation-seekers."
+        },
+        {
+          "id": "Panchgani",
+          "image": "https://hblimg.mmtcdn.com/content/hubble/img/panchgani/mmt/destination/m_destination-panchgani-landscape_l_400_640.jpg",
+          "subtitle": "Hill Station in Maharashtra",
+          "about": "Panchgani is the perfect weekend getaway for city dwellers. You can expect hot and humid weather. Panchgani is also very popular among relaxation-seekers."
+        },
+        {
+          "id": "Alibaug",
+          "image": "https://hblimg.mmtcdn.com/content/hubble/img/alibaugh/mmt/destination/m_destination-alibagh-landscape_l_400_640.jpg",
+          "subtitle": "Scenic Coastal Town In Maharashtra",
+          "about": "Alibagh is the perfect weekend getaway for city dwellers. You can expect hot and humid weather. Alibagh is also very popular among relaxation-seekers."
+        }
       ]
     },
     {
