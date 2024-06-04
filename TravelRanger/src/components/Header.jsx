@@ -16,7 +16,6 @@ import HotelIcon from "@mui/icons-material/Hotel";
 import HouseIcon from "@mui/icons-material/House";
 import HolidayVillageIcon from "@mui/icons-material/HolidayVillage";
 import CurrencyExchangeIcon from "@mui/icons-material/CurrencyExchange";
-import TrainIcon from "@mui/icons-material/Train";
 
 import {
   Autocomplete,
@@ -179,7 +178,6 @@ export default function Header() {
           />
         </Tabs>
       </Box>
-      <Tab icon={<TrainIcon />} label="Trains" {...a11yProps(4)} />
       <TabPanel value={value} index={0}>
         <Box>
           <Box
@@ -268,6 +266,7 @@ export default function Header() {
             </LocalizationProvider>
             <Box
               sx={{
+                width: [200, 300] ,
                 boxShadow : 'rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;',
                 backgroundColor: "#eaf5ff",
                 padding: "10px",
