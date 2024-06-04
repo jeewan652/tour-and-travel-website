@@ -15,12 +15,7 @@ import FlightIcon from "@mui/icons-material/Flight";
 import HotelIcon from "@mui/icons-material/Hotel";
 import HouseIcon from "@mui/icons-material/House";
 import HolidayVillageIcon from "@mui/icons-material/HolidayVillage";
-import TrainIcon from "@mui/icons-material/Train";
-import DirectionsBusIcon from "@mui/icons-material/DirectionsBus";
-import LocalTaxiIcon from "@mui/icons-material/LocalTaxi";
 import CurrencyExchangeIcon from "@mui/icons-material/CurrencyExchange";
-import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
-import NaturePeopleIcon from "@mui/icons-material/NaturePeople";
 
 import {
   Autocomplete,
@@ -37,7 +32,6 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import { isBefore } from "date-fns";
-import { fontSize, width } from "@mui/system";
 import { useNavigate } from "react-router-dom";
 
 function TabPanel(props) {

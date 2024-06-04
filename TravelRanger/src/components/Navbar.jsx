@@ -4,7 +4,6 @@ import styles from "./navbar.module.css";
 import FlightIcon from "@mui/icons-material/Flight";
 import HotelIcon from "@mui/icons-material/Hotel";
 import HomeWorkIcon from "@mui/icons-material/HomeWork";
-import TrainIcon from "@mui/icons-material/Train";
 import DirectionsBusFilledIcon from "@mui/icons-material/DirectionsBusFilled";
 import LocalTaxiIcon from "@mui/icons-material/LocalTaxi";
 import CreditCardIcon from "@mui/icons-material/CreditCard";
@@ -24,15 +23,8 @@ const Navbar = () => {
   const handleClickFlight = () => navigate("/flight");
   const handleClickHotels = () => navigate("/hotel");
   const handleClickHomeWork = () => navigate("/where");
-  const handleClickTrain = () => navigate("/train");
-  const handleClickBus = () => navigate("/bus");
-  const handleClickCabs = () => navigate("/cab");
   const handleClickVisa = () => navigate("/gift-cards");
-  const handleClickCharter = () => navigate("/charter");
-  const handleClickActivities = () => navigate("/activitie");
 
-
-  //faisal
   const isLoggedIn = useSelector((store) => store.auth.isLoggedIn);
 
   return (
@@ -110,12 +102,6 @@ const Navbar = () => {
                 <div >
                   {isLoggedIn ? <AccountMenu /> : <Login />}
                 </div>
-
-                {/* <div className={styles.login}>
-                  <div onClick={handleClickLogin}>
-                    <Button variant="login">Login Or Create Account</Button>
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>
