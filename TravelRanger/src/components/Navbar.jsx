@@ -4,7 +4,6 @@ import styles from "./navbar.module.css";
 import FlightIcon from "@mui/icons-material/Flight";
 import HotelIcon from "@mui/icons-material/Hotel";
 import HomeWorkIcon from "@mui/icons-material/HomeWork";
-import TrainIcon from "@mui/icons-material/Train";
 import DirectionsBusFilledIcon from "@mui/icons-material/DirectionsBusFilled";
 import LocalTaxiIcon from "@mui/icons-material/LocalTaxi";
 import CreditCardIcon from "@mui/icons-material/CreditCard";
@@ -24,15 +23,8 @@ const Navbar = () => {
   const handleClickFlight = () => navigate("/flight");
   const handleClickHotels = () => navigate("/hotel");
   const handleClickHomeWork = () => navigate("/where");
-  const handleClickTrain = () => navigate("/train");
-  const handleClickBus = () => navigate("/bus");
-  const handleClickCabs = () => navigate("/cab");
   const handleClickVisa = () => navigate("/gift-cards");
-  const handleClickCharter = () => navigate("/charter");
-  const handleClickActivities = () => navigate("/activitie");
 
-
-  //faisal
   const isLoggedIn = useSelector((store) => store.auth.isLoggedIn);
 
   return (
@@ -93,28 +85,7 @@ const Navbar = () => {
                 <p style={{ marginTop: "0px" }}>Homestays</p>
               </div>
 
-              <div onClick={handleClickTrain}>
-                <span>
-                  <TrainIcon style={{ fontSize: 30, padding: 4 }}></TrainIcon>
-                </span>
-                <p style={{ marginTop: "0px" }}>Trains</p>
-              </div>
-              <div onClick={handleClickBus}>
-                <span>
-                  <DirectionsBusFilledIcon
-                    style={{ fontSize: 30, padding: 4 }}
-                  ></DirectionsBusFilledIcon>
-                </span>
-                <p style={{ marginTop: "0px" }}>Buses</p>
-              </div>
-              <div onClick={handleClickCabs}>
-                <span>
-                  <LocalTaxiIcon
-                    style={{ fontSize: 30, padding: 4 }}
-                  ></LocalTaxiIcon>
-                </span>
-                <p style={{ marginTop: "0px" }}>Cabs</p>
-              </div>
+              
               <div onClick={handleClickVisa}>
                 <span>
                   <CreditCardIcon
@@ -122,22 +93,6 @@ const Navbar = () => {
                   ></CreditCardIcon>
                 </span>
                 <p style={{ marginTop: "0px" }}>Gift</p>
-              </div>
-              <div onClick={handleClickCharter}>
-                <span>
-                  <FlightTakeoffIcon
-                    style={{ fontSize: 30, padding: 4 }}
-                  ></FlightTakeoffIcon>
-                </span>
-                <p>Charter flights</p>
-              </div>
-              <div onClick={handleClickActivities}>
-                <span>
-                  <DownhillSkiingIcon
-                    style={{ fontSize: 30, padding: 4 }}
-                  ></DownhillSkiingIcon>
-                </span>
-                <p>Activities</p>
               </div>
 
               <div
@@ -147,12 +102,6 @@ const Navbar = () => {
                 <div >
                   {isLoggedIn ? <AccountMenu /> : <Login />}
                 </div>
-
-                {/* <div className={styles.login}>
-                  <div onClick={handleClickLogin}>
-                    <Button variant="login">Login Or Create Account</Button>
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>

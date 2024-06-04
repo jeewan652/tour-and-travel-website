@@ -15,12 +15,7 @@ import FlightIcon from "@mui/icons-material/Flight";
 import HotelIcon from "@mui/icons-material/Hotel";
 import HouseIcon from "@mui/icons-material/House";
 import HolidayVillageIcon from "@mui/icons-material/HolidayVillage";
-import TrainIcon from "@mui/icons-material/Train";
-import DirectionsBusIcon from "@mui/icons-material/DirectionsBus";
-import LocalTaxiIcon from "@mui/icons-material/LocalTaxi";
 import CurrencyExchangeIcon from "@mui/icons-material/CurrencyExchange";
-import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
-import NaturePeopleIcon from "@mui/icons-material/NaturePeople";
 
 import {
   Autocomplete,
@@ -37,7 +32,6 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import { isBefore } from "date-fns";
-import { fontSize, width } from "@mui/system";
 import { useNavigate } from "react-router-dom";
 
 function TabPanel(props) {
@@ -177,23 +171,10 @@ export default function Header() {
             label="Holiday Packages"
             {...a11yProps(3)}
           />
-          <Tab icon={<TrainIcon />} label="Trains" {...a11yProps(4)} />
-          <Tab icon={<DirectionsBusIcon />} label="Buses" {...a11yProps(5)} />
-          <Tab icon={<LocalTaxiIcon />} label="Cabs" {...a11yProps(6)} />
           <Tab
             icon={<CurrencyExchangeIcon />}
             label="Forex"
             {...a11yProps(7)}
-          />
-          <Tab
-            icon={<FlightTakeoffIcon />}
-            label="Charter Flights"
-            {...a11yProps(8)}
-          />
-          <Tab
-            icon={<NaturePeopleIcon />}
-            label="Activities"
-            {...a11yProps(9)}
           />
         </Tabs>
       </Box>
@@ -285,6 +266,7 @@ export default function Header() {
             </LocalizationProvider>
             <Box
               sx={{
+                boxShadow : 'rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;',
                 backgroundColor: "#eaf5ff",
                 padding: "10px",
                 borderRadius: "5px",
