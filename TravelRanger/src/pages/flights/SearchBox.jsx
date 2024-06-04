@@ -122,10 +122,10 @@ const SearchBox = () => {
                 <input type="radio" name="trip" />
                 <div>ROUND TRIP</div>
               </div>
-              <div>
+              {/* <div>
                 <input type="radio" name="trip" />
                 <div>MULTICITY</div>
-              </div>
+              </div> */}
             </div>
             <div className={styles.book}>
               Book International and Domestic Flights
