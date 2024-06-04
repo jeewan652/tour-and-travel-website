@@ -72,6 +72,13 @@ export const Carousal = () => {
             </p>
             <p
               className="indLinks"
+              onClick={() => setOffers(4)}
+              style={{ borderBottom: offers === 4 ? "3px solid #008cff" : "" }}
+            >
+              TRAINS
+            </p>
+            <p
+              className="indLinks"
               onClick={() => setOffers(6)}
               style={{ borderBottom: offers === 6 ? "3px solid #008cff" : "" }}
             >

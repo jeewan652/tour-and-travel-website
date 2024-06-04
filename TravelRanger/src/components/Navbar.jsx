@@ -4,14 +4,10 @@ import styles from "./navbar.module.css";
 import FlightIcon from "@mui/icons-material/Flight";
 import HotelIcon from "@mui/icons-material/Hotel";
 import HomeWorkIcon from "@mui/icons-material/HomeWork";
-import DirectionsBusFilledIcon from "@mui/icons-material/DirectionsBusFilled";
-import LocalTaxiIcon from "@mui/icons-material/LocalTaxi";
 import CreditCardIcon from "@mui/icons-material/CreditCard";
-import DownhillSkiingIcon from "@mui/icons-material/DownhillSkiing";
-import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
+import TrainIcon from "@mui/icons-material/Train";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { Button } from "@mui/material";
 import Login from "./Login";
 import AccountMenu from "./AccountMenu";
 import { useSelector } from "react-redux";
@@ -23,6 +19,7 @@ const Navbar = () => {
   const handleClickFlight = () => navigate("/flight");
   const handleClickHotels = () => navigate("/hotel");
   const handleClickHomeWork = () => navigate("/where");
+  const handleClickTrain = () => navigate("/train");
   const handleClickVisa = () => navigate("/gift-cards");
 
   const isLoggedIn = useSelector((store) => store.auth.isLoggedIn);
@@ -93,6 +90,12 @@ const Navbar = () => {
                   ></CreditCardIcon>
                 </span>
                 <p style={{ marginTop: "0px" }}>Gift</p>
+              </div>
+              <div onClick={handleClickTrain}>
+                <span>
+                  <TrainIcon style={{ fontSize: 30, padding: 4 }}></TrainIcon>
+                </span>
+                <p style={{ marginTop: "0px" }}>Trains</p>
               </div>
 
               <div
