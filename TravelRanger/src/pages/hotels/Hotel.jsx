@@ -14,7 +14,6 @@ import { pl } from "date-fns/locale";
 const cities = [
   "Mumbai",
   "Delhi",
-  "Kolkata",
   "Pune",
 ];
 
