@@ -21,6 +21,16 @@
       "totalTime": "02h 55m"
     },
     {
+      "airline": "Vistara",
+      "number": "6E 2054",
+      "from": "DELHI",
+      "to": "MUMBAI",
+      "departure": "04:20",
+      "arrival": "07:15",
+      "price": "6999",
+      "totalTime": "02h 55m"
+    },
+    {
       "airline": "GoAir",
       "number": "6E 2054",
       "from": "DELHI",
