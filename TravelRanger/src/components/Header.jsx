@@ -177,23 +177,10 @@ export default function Header() {
             label="Holiday Packages"
             {...a11yProps(3)}
           />
-          <Tab icon={<TrainIcon />} label="Trains" {...a11yProps(4)} />
-          <Tab icon={<DirectionsBusIcon />} label="Buses" {...a11yProps(5)} />
-          <Tab icon={<LocalTaxiIcon />} label="Cabs" {...a11yProps(6)} />
           <Tab
             icon={<CurrencyExchangeIcon />}
             label="Forex"
             {...a11yProps(7)}
-          />
-          <Tab
-            icon={<FlightTakeoffIcon />}
-            label="Charter Flights"
-            {...a11yProps(8)}
-          />
-          <Tab
-            icon={<NaturePeopleIcon />}
-            label="Activities"
-            {...a11yProps(9)}
           />
         </Tabs>
       </Box>

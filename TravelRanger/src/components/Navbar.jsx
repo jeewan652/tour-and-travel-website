@@ -93,28 +93,7 @@ const Navbar = () => {
                 <p style={{ marginTop: "0px" }}>Homestays</p>
               </div>
 
-              <div onClick={handleClickTrain}>
-                <span>
-                  <TrainIcon style={{ fontSize: 30, padding: 4 }}></TrainIcon>
-                </span>
-                <p style={{ marginTop: "0px" }}>Trains</p>
-              </div>
-              <div onClick={handleClickBus}>
-                <span>
-                  <DirectionsBusFilledIcon
-                    style={{ fontSize: 30, padding: 4 }}
-                  ></DirectionsBusFilledIcon>
-                </span>
-                <p style={{ marginTop: "0px" }}>Buses</p>
-              </div>
-              <div onClick={handleClickCabs}>
-                <span>
-                  <LocalTaxiIcon
-                    style={{ fontSize: 30, padding: 4 }}
-                  ></LocalTaxiIcon>
-                </span>
-                <p style={{ marginTop: "0px" }}>Cabs</p>
-              </div>
+              
               <div onClick={handleClickVisa}>
                 <span>
                   <CreditCardIcon
@@ -122,22 +101,6 @@ const Navbar = () => {
                   ></CreditCardIcon>
                 </span>
                 <p style={{ marginTop: "0px" }}>Gift</p>
-              </div>
-              <div onClick={handleClickCharter}>
-                <span>
-                  <FlightTakeoffIcon
-                    style={{ fontSize: 30, padding: 4 }}
-                  ></FlightTakeoffIcon>
-                </span>
-                <p>Charter flights</p>
-              </div>
-              <div onClick={handleClickActivities}>
-                <span>
-                  <DownhillSkiingIcon
-                    style={{ fontSize: 30, padding: 4 }}
-                  ></DownhillSkiingIcon>
-                </span>
-                <p>Activities</p>
               </div>
 
               <div
