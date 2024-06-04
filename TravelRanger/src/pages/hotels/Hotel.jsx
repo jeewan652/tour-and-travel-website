@@ -13,14 +13,7 @@ import Modals from "./Modal";
 const cities = [
   "Mumbai",
   "Delhi",
-  "Kolkata",
-  "Chennai",
-  "Bangalore",
-  "Hyderabad",
-  "Ahmedabad",
   "Pune",
-  "Surat",
-  "Jaipur",
 ];
 
 const Hotel = () => {
