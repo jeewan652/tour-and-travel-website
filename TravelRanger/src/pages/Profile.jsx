@@ -90,9 +90,9 @@ function createData(name, detail, fat, carbs, protein) {
 function CustomizedTables() {
   const userData = useSelector((store) => store.auth?.user?.[0]);
   const displayName = userData?.displayName;
-  const [Birthday, setBirthday] = useState("Add+");
-  const [Gender, setGender] = useState("Add+");
-  const [Marital, setMarital] = useState("Add+");
+  const [Birthday,] = useState("Add+");
+  const [Gender,] = useState("Add+");
+  const [Marital,] = useState("Add+");
 
   let rows = [];
   if (userData) {
@@ -128,10 +128,8 @@ function CustomizedTables() {
 function CustomizedTables2() {
   const userData = useSelector((store) => store.auth.user[0]);
   const Email = userData?.email;
-  const [Mobile, setMobile] = useState("Add+");
-  const [Password, setPassword] = useState("******");
-
-  const [Marital, setMarital] = useState("Add+");
+  const [Mobile,] = useState("Add+");
+  const [Password,] = useState("******");
 
   const rows = [
     createData("Mobile  Number", Mobile),
