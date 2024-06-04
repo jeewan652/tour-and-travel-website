@@ -21,6 +21,8 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Box } from "@mui/system";
 import axios from "axios";
+import Destinaitons from "./adminPages/Destinations"
+import FlightData from "./adminPages/flightData";
 
 const style = {
   position: "absolute",
@@ -101,6 +103,11 @@ const Admin = () => {
 
   const smallScreen = useMediaQuery("(max-width: 600px)");
   const mediumScreen = useMediaQuery("(max-width: 960px)");
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleDropdownToggle = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div style={{ paddingTop: "100px" }}>
       <AppBar position="static">
@@ -128,14 +135,14 @@ const Admin = () => {
       >
         <div
           style={{
-            width: "10%",
+            width: "12%",
             padding: "2%",
             backgroundColor: "#eeeeee",
             display: "flex",
             flexDirection: "column",
             gap: "50px",
             height: "100vh",
-            textAlign: "center",
+            textAlign: "start",
           }}
         >
           <div
@@ -182,7 +189,59 @@ const Admin = () => {
           >
             Gifts
           </div>
+          <div className="sidebar-tab">
+            <a style={{
+              border: "none",
+              fontSize: "20px",
+              color: "Black",
+              cursor: "pointer",
+            }} onClick={handleDropdownToggle}>
+              Add details &gt;
+              {isOpen? (
+                <ul> 
+                  <li style={{textDecoration:'none'}}>
+                    <a onClick={() => handleTabChange("Destination")}> Destination</a>
+                  </li>
+                  <li>
+                    <a onClick={() => handleTabChange("flightData")} > Flight Data</a>
+                  </li>
+                </ul>
+              ) : null}
+            </a>
+          </div>
         </div>
+        {selectedTab === "Destination" && (  
+          <div
+          style={{
+            display: "flex",
+            width: "80%",
+            flexDirection: "column",
+            padding: "20px",
+            textAlign: "center",
+          }}>
+            <div>
+              
+              <Destinaitons/>
+            </div>
+            
+          </div>
+        )}
+        {selectedTab === "flightData" && (  
+          <div
+          style={{
+            display: "flex",
+            width: "80%",
+            flexDirection: "column",
+            padding: "20px",
+            textAlign: "center",
+          }}>
+            <div>
+
+              <FlightData/>
+            </div>
+            
+          </div>
+        )}
         {selectedTab === "Dashboard" && (
           <div
             style={{

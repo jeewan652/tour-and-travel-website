@@ -22,9 +22,10 @@ import PrivateRoute from "./PrivateRoute";
 
 import BookNow from "../pages/bookingPage/BookNow";
 
-import Admin from "../pages/Admin";
+import Admin from "../pages/adminPannel/Admin";
 import Singlehotel from "../pages/hotels/Singlehotel";
 import NotFound from "../pages/NotFound";
+import Destinaitons from "../pages/adminPannel/adminPages/Destinations"
 
 const AllRoute = () => {
   return (
@@ -42,6 +43,7 @@ const AllRoute = () => {
       <Route path="/admin" element={<Admin />}></Route>
       <Route path="/singlehotel" element={<Singlehotel />}></Route>
       <Route path="*" element={<NotFound />} />
+      <Route path="/Destinaitons" element={<Destinaitons />}></Route>
     </Routes>
   );
 };

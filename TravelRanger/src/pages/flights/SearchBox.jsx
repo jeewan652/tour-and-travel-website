@@ -197,6 +197,19 @@ const SearchBox = () => {
                 </div>
               </div>
             </div>
+            <div>
+            <DatePicker
+                label="Departure"
+                value={departure}
+                disablePast={true}
+                onChange={(newValue) => {
+                  setDeparture(newValue);
+                }}
+                renderInput={(params) => (
+                  <TextField {...params} error={false} />
+                )}
+              />
+            </div>
 
             <div className={styles.travellerContainer}>
               <div onClick={onClickModal}>
