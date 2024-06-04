@@ -157,7 +157,7 @@ const SearchBox = () => {
                       <MenuItem value={"DELHI"}>New Delhi</MenuItem>
                       <MenuItem value={"MUMBAI"}>Mumbai</MenuItem>
                       <MenuItem value={"PUNE"}>Pune</MenuItem>
-                      <MenuItem value={"BANGLURU"}>Bengaluru</MenuItem>
+                      <MenuItem value={"BENGALURU"}>Bengaluru</MenuItem>
                     </Select>
                   </FormControl>
                 </div>
