@@ -173,13 +173,13 @@ export default function Header() {
             {...a11yProps(3)}
           />
           <Tab
-            icon={<CurrencyExchangeIcon />}
-            label="Forex"
+            icon={<TrainIcon />}
+            label="Trains"
             {...a11yProps(7)}
           />
         </Tabs>
       </Box>
-      <Tab icon={<TrainIcon />} label="Trains" {...a11yProps(4)} />
+      {/* <Tab icon={<TrainIcon />} label="Trains" {...a11yProps(4)} /> */}
       <TabPanel value={value} index={0}>
         <Box>
           <Box
