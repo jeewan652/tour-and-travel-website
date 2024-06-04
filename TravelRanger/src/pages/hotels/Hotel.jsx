@@ -10,6 +10,7 @@ import React, { useState } from "react";
 import hotels from "../../hotel.json";
 import Citycard from "./Citycard";
 import Modals from "./Modal";
+import { pl } from "date-fns/locale";
 const cities = [
   "Mumbai",
   "Delhi",
@@ -23,6 +24,11 @@ const Hotel = () => {
   const [reset, setreset] = useState(true);
 
   React.useEffect(() => {
+    if (!value) {
+      setData([]);
+      return; 
+    }
+
     let mumbaiData = Object.keys(hotels)
       .filter((key) => key === value)
       .map((key) => hotels[key]);
@@ -48,7 +54,6 @@ const Hotel = () => {
         sx={{
           backgroundColor: "aliceblue",
           width: "100%",
-
           top: "105px",
           display: "flex",
           position: "fixed",
@@ -68,9 +73,10 @@ const Hotel = () => {
             }}
             renderInput={(params) => (
               <TextField
-                style={{ color: "red" }}
+                style={{ color: "red"}}
                 {...params}
                 label="city"
+                placeholder="Please select city"
               />
             )}
           />
