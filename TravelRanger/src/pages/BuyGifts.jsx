@@ -656,7 +656,7 @@ function BuyGifts() {
             alt=""
           />
           <h4>
-            Post successful payment, an e-mail will be sent by MakeMyTrip on
+            Post successful payment, an e-mail will be sent by Travel Ranger on
             behalf of you to your recipient.
           </h4>
         </div>
@@ -799,19 +799,19 @@ function BuyGifts() {
                 <Typography
                   sx={{ color: "black", textDecoration: "underline" }}
                 >
-                  1. What is a MakeMyTrip Gift Card?
+                  1. What is a Travel Ranger Gift Card?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography sx={{ color: "black" }}>
-                  A MakeMyTrip Gift Card is a gift voucher that can be bought by
+                  A Travel Ranger Gift Card is a gift voucher that can be bought by
                   anyone as a gift for any occasion. These gift cards can be
-                  bought online from MakeMyTrip’s official website and app. The
+                  bought online from Travel Ranger official website and app. The
                   monetary value of these cards starts from INR 1,000. There are
                   no extra charges on this voucher and the receiver can use the
                   whole amount. One can redeem the value while buying travel
                   packages, booking hotels, and booking flight tickets on
-                  MakeMyTrip’s official website. It can be sent immediately over
+                  Travel Ranger official website. It can be sent immediately over
                   email or WhatsApp to the receiver.
                 </Typography>
               </AccordionDetails>
@@ -831,19 +831,19 @@ function BuyGifts() {
                   sx={{ color: "black", textDecoration: "underline" }}
                 >
                   2. What are the types of travel gift cards available on
-                  MakeMyTrip?
+                  Travel Ranger?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography sx={{ color: "black" }}>
-                  MakeMyTrip has a gift card for every occasion. There are
+                Travel Ranger has a gift card for every occasion. There are
                   festive gift cards such as Diwali Gift Cards, Eid Mubarak Gift
                   Cards, Christmas Gift Cards, Onam Gift Cards, Bhaidoojh Gift
                   Cards, Karvachauth Gift Cards, and Rakshabandhan Gift Cards.
                   Surprise friends and family with Thank You Gift Cards,
                   Congratulations Gift Cards, Birthday Gift Cards, Mother’s Day
                   Gift Card and Father’s Day Gift Card. Delight your loved ones
-                  with Wedding Gift Card, and Anniversary Gift Card. MakeMyTrip
+                  with Wedding Gift Card, and Anniversary Gift Card. Travel Ranger
                   has got you covered officially too with Corporate Gift Cards
                   and Farewell Gift Cards.
                 </Typography>
@@ -863,13 +863,13 @@ function BuyGifts() {
                 <Typography
                   sx={{ color: "black", textDecoration: "underline" }}
                 >
-                  3. How do I buy a MakeMyTrip Gift Card?
+                  3. How do I buy a Travel Ranger Gift Card?
                 </Typography>
               </AccordionSummary>
               <AccordionDetails>
                 <Typography sx={{ color: "black" }}>
-                  To buy a MakeMyTrip Gift Card, you must log on to the official
-                  website of MakeMyTrip (http://www.makemytrip.com/gift-cards/).
+                  To buy a Travel Ranger Gift Card, you must log on to the official
+                  website of Travel Ranger (http://www.makemytrip.com/gift-cards/).
                   Select the occasion of the gift card and then enter the amount
                   and quantity. Mention the address and other details of the
                   receiver and add a personal touch to it by writing a message
@@ -902,7 +902,7 @@ function BuyGifts() {
                 <Typography sx={{ color: "black" }}>
                   The gift card can be redeemed to book flights, hotels, and
                   holiday packages. You can redeem it online at
-                  www.makemytrip.com or on the Android & IOS apps. Go to “More
+                  www.travelranger.com or on the Android & IOS apps. Go to “More
                   Options” and then select “Gift Card” as your payment mode.
                   Enter your gift card no. (16 digits) and the 6-digit PIN.
                   After clicking on the "Make Payment" tab, you can pay the
@@ -945,28 +945,6 @@ function BuyGifts() {
                 color: "black",
               }}
             >
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon sx={{ color: "#7caff6" }} />}
-                aria-controls="panel1a-content"
-                id="panel1a-header"
-              >
-                <Typography
-                  sx={{ color: "black", textDecoration: "underline" }}
-                >
-                  6. What are the customer support details?
-                </Typography>
-              </AccordionSummary>
-              <AccordionDetails>
-                <Typography sx={{ color: "black" }}>
-                  You can send an email to support@giftbig.com or call at
-                  0124–4628747 for any queries related to order status,
-                  delivery, purchase, or usage of gift cards. Holiday packages
-                  can be booked offline. For that, you must call customer care
-                  at (+91) 9599595618 or write to gifts@makemytrip.com. For
-                  providing feedback and any other concerns about any gift card,
-                  you can write to feedback.giftvouchers@makemytrip.com.
-                </Typography>
-              </AccordionDetails>
             </Accordion>
           </AccordionDetails>
         </Accordion>
@@ -989,16 +967,7 @@ function BuyGifts() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography sx={{ color: "black" }}>
-              <p>
-                The Gift card is valid for purchases made from Makemytrip only
-                and is valid for a period of 12 Months from the date of
-                Purchase.
-              </p>
               <p>For Flights, Hotels & Holidays :</p>
-              <p>
-                Can be redeemed online at www.makemytrip.com or on MakeMyTrip
-                Android & IOS app. Please follow the steps listed below:
-              </p>
               <p>
                 Select your Flight/ Hotel and fill required details till you
                 reach the payment page.
@@ -1020,11 +989,6 @@ function BuyGifts() {
                 For redeeming Holidays offline through our Holiday Experts :
               </p>
               <p>Please call on the understated number to redeem the card.</p>
-              <p>Domestic Holiday packages: 9599595601</p>
-              <p>International Holiday packages: 9599595618</p>
-              <p>Alternatively you can also write on gifts@makemytrip.com</p>
-              <p>You can also visit the MakeMyTrip Branches to redeem.</p>
-              <p>This Gift card is not valid on Bus, Rail and Car bookings.</p>
               <p>
                 Gift cards are valid on bookings made through MMT Mobile App.
               </p>
@@ -1032,11 +996,6 @@ function BuyGifts() {
                 In case of transaction failures after Gift Card is applied,
                 amount would be automatically refunded to the same cards within
                 72 hours.
-              </p>
-              <p>
-                This Gift card/voucher cannot be clubbed with any other ongoing
-                offer discount/cash back/promotion run by Makemytrip.com on app
-                or website.
               </p>
               <p>
                 This Gift card is valid for partial redemption. Balance would
@@ -1058,10 +1017,6 @@ function BuyGifts() {
                 of booking along with an ID proof for the offline redemption.
               </p>
               <p>
-                MakeMyTrip is not responsible if the Gift card is lost, stolen
-                or used without permission.
-              </p>
-              <p>
                 In case of cancellation of bookings made using the gift card
                 within the validity period, the amount will be reversed to the
                 same card as used at the time of booking.
@@ -1075,18 +1030,6 @@ function BuyGifts() {
                 In case of cancellations where the gift card validity has
                 expired, no refund will be processed for the amount paid by the
                 gift card.
-              </p>
-              <p>
-                MakeMyTrip is the final authority on the interpretation of these
-                rules
-              </p>
-              <p>
-                MakeMyTrip reserves the right to deny accepting any Gift card if
-                it suspects that there is duplicity of cards.
-              </p>
-              <p>
-                In no event the liability of MakeMyTrip for any claims shall
-                exceed the value of the card.
               </p>
               <p>
                 In the event of any dispute, parties agree to exclusive

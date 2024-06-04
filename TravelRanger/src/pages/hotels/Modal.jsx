@@ -181,16 +181,3 @@ export default function Header({ Filter }) {
     </Box>
   );
 }
-
-// const cities = [
-//   { label: "Mumbai" },
-//   { label: "Delhi" },
-//   { label: "Kolkata" },
-//   { label: "Chennai" },
-//   { label: "Bangalore" },
-//   { label: "Hyderabad" },
-//   { label: "Ahmedabad" },
-//   { label: "Pune" },
-//   { label: "Surat" },
-//   { label: "Jaipur" },
-// ];

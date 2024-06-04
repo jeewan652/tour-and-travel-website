@@ -48,7 +48,6 @@ const SearchBox = () => {
     });
 
     setNewData(c);
-    // localStorage.setItem("dataKey", JSON.stringify(c));
   };
 
   const onClickNoOfPass = (val) => {
@@ -199,31 +198,6 @@ const SearchBox = () => {
               </div>
             </div>
 
-            {/* departure and return date start */}
-            {/* <div className={styles.DepRetContainer}> */}
-            {/* departure date starts */}
-            {/* <div style={{ width: "100%" }}>
-                <FormControl sx={{ width: "100%" }}>
-                  <LocalizationProvider
-                    sx={{ width: "100%" }}
-                    dateAdapter={AdapterDateFns}
-                  >
-                    <DatePicker
-                      label="Departure"
-                      value={departure}
-                      onChange={(newValue) => {
-                        setDeparture(newValue);
-                      }}
-                      renderInput={(params) => <TextField {...params} />}
-                    />
-                  </LocalizationProvider>
-                </FormControl>
-              </div> */}
-            {/* departure date end */}
-            {/* </div> */}
-            {/* departure and return date end */}
-
-            {/* number of travellers start */}
             <div className={styles.travellerContainer}>
               <div onClick={onClickModal}>
                 <div className={styles.travellersText}>TRAVELLERS</div>
@@ -329,25 +303,6 @@ const SearchBox = () => {
       </div>
 
       <div className={styles.container}>
-        {/* <form className="form" onSubmit={handleSearch}>
-        <input
-          type="text"
-          className="form-control"
-          placeholder="City Nmae"
-          value={value}
-          onChange={(e) => setValue(e.target.value)}
-        />
-        <input
-          type="text"
-          className="form-control"
-          placeholder="City Nmae"
-          value={value1}
-          onChange={(e) => setValue1(e.target.value)}
-        />
-
-        <button type="submit">Search</button>
-      </form> */}
-
         <div className={styles.left}>
           <div className={styles.filters}>
             <div className={styles.firstFilter}>

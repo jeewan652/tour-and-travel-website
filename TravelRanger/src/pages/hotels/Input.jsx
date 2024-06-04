@@ -151,26 +151,3 @@ const CheckboxComponent = () => {
 };
 
 export default CheckboxComponent;
-/*
-
-
-const cities = {
-    Mumbai: ['Marine Drive', 'Gateway of India', 'Juhu Beach'],
-    Pune: ['Aga Khan Palace', 'Sinhagad Fort', 'Shaniwarwada'],
-    Delhi: ['Red Fort', 'India Gate', 'Qutub Minar']
-};
-
-const value = Object.keys(cities).filter(key => key === 'Mumbai');
-console.log(cities[value][0]);
-
-
-const value = Object.keys(cities).filter(key => key === 'Mumbai');
-console.log(cities[value]);
-
-function getCityName(obj){
-let filterCity = Object.keys(obj).filter(city => city === 'Mumbai');
-return filterCity;
-}
-
-console.log(getCityName(cities)); // Output: ['Mumbai']
-*/

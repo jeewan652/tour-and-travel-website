@@ -13,6 +13,7 @@ import Modals from "./Modal";
 const cities = [
   "Mumbai",
   "Delhi",
+  "Kolkata",
   "Pune",
 ];
 
@@ -20,7 +21,6 @@ const Hotel = () => {
   const [value, setValue] = useState(cities[0]);
   const [Data, setData] = useState([]);
   const [reset, setreset] = useState(true);
-  // let input = value;
 
   React.useEffect(() => {
     let mumbaiData = Object.keys(hotels)
@@ -48,7 +48,6 @@ const Hotel = () => {
         sx={{
           backgroundColor: "aliceblue",
           width: "100%",
-          // height: "70px",
 
           top: "105px",
           display: "flex",
@@ -71,7 +70,7 @@ const Hotel = () => {
               <TextField
                 style={{ color: "red" }}
                 {...params}
-                label="city are or property"
+                label="city"
               />
             )}
           />
