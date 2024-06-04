@@ -57,6 +57,7 @@ const Hotel = () => {
           display: "flex",
           position: "fixed",
           padding: "10px",
+          marginTop: "-22px",
           flexDirection: ["column", "column", "row"],
         }}
       >
@@ -868,6 +869,7 @@ const Hotel = () => {
         <Box
           sx={{
             width: "90%",
+            
           }}
         >
           <Grid
@@ -881,7 +883,7 @@ const Hotel = () => {
                   key={e.id}
                   price={e.grayText}
                   dscprice={e.discprice}
-                  name={e.wordBreak}
+                  name={e.blueText}
                   image={e.img}
                   imgThumb1={e.imgThumb1}
                   imgThumb2={e.imgThumb2}
@@ -889,8 +891,8 @@ const Hotel = () => {
                   imgThumb4={e.imgThumb4}
                   rating={e.rating}
                   ratingText={e.ratingText}
-                  location={e.blueText}
-                  location2={e.pc__html}
+                  location={e.pc__html}
+                  location2={e.wordBreak}
                   item={e.persuasion__item}
                   cancellation={e.cancellation}
                   freecancellation={e.freecanc}

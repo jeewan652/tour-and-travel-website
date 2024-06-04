@@ -52,7 +52,7 @@ const ComponentB = ({ email, password, setpassword, setflip }) => {
         Login
       </Button>
       <p style={{ fontSize: "12px" }}>
-        By proceeding, you agree to Musafir's Privacy Policy, User Agreement and
+        By proceeding, you agree to TravelRanger's Privacy Policy, User Agreement and
         T&Cs
       </p>
     </>

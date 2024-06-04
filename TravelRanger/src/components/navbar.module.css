@@ -24,6 +24,7 @@
 /* make my trip anchor tag logo container */
 
 .logoimg {
+    margin-left: 20px;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -32,7 +33,7 @@
 
 /* make my trip anchor tag img container */
 .logoimg img {
-  
+
     width: 200px;
 }
 
