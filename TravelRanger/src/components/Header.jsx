@@ -14,6 +14,7 @@ import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import FlightIcon from "@mui/icons-material/Flight";
 import HotelIcon from "@mui/icons-material/Hotel";
 import HouseIcon from "@mui/icons-material/House";
+import TrainIcon from "@mui/icons-material/Train";
 import HolidayVillageIcon from "@mui/icons-material/HolidayVillage";
 import CurrencyExchangeIcon from "@mui/icons-material/CurrencyExchange";
 
