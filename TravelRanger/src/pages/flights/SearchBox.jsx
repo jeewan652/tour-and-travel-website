@@ -37,7 +37,7 @@ const SearchBox = () => {
 
   const handleSearch = async () => {
     return await axios
-      .get(`https://musafir-backend.onrender.com/flights?q=${from}`)
+      .get(`https://tour-and-travel-f248c-default-rtdb.asia-southeast1.firebasedatabase.app/flights.json?q=${from}`)
       .then((response) => handleNewSearch(response.data))
       .catch((err) => console.log(err));
   };
@@ -70,7 +70,7 @@ const SearchBox = () => {
 
   const loadFlightData = async () => {
     return await axios
-      .get("https://musafir-backend.onrender.com/flights")
+      .get("https://tour-and-travel-f248c-default-rtdb.asia-southeast1.firebasedatabase.app/flights.json")
       .then((response) => setData(response.data))
       .catch((err) => console.log(err));
   };
@@ -156,7 +156,11 @@ const SearchBox = () => {
                       <MenuItem value={"DELHI"}>New Delhi</MenuItem>
                       <MenuItem value={"MUMBAI"}>Mumbai</MenuItem>
                       <MenuItem value={"PUNE"}>Pune</MenuItem>
-                      <MenuItem value={"BENGALURU"}>Bengaluru</MenuItem>
+                      <MenuItem value={"BANGALORE"}>Bangalore</MenuItem>
+                      <MenuItem value={"CHENNAI"}>Chennai</MenuItem>
+                      <MenuItem value={"HYDERABAD"}>Hyderabad</MenuItem>
+                      <MenuItem value={"KOLKATA"}>Kolkata</MenuItem>
+                      <MenuItem value={"AHMEDABAD"}>Ahmedabad</MenuItem>
                     </Select>
                   </FormControl>
                 </div>
@@ -180,10 +184,14 @@ const SearchBox = () => {
                       label="to"
                       onChange={(e) => setTo(e.target.value)}
                     >
-                      <MenuItem value={"BANGLURU"}>Bengaluru</MenuItem>
+                      <MenuItem value={"BANGALORE"}>Bangalore</MenuItem>
                       <MenuItem value={"MUMBAI"}>Mumbai</MenuItem>
                       <MenuItem value={"PUNE"}>Pune</MenuItem>
                       <MenuItem value={"DELHI"}>New Delhi</MenuItem>
+                      <MenuItem value={"CHENNAI"}>Chennai</MenuItem>
+                      <MenuItem value={"HYDERABAD"}>Hyderabad</MenuItem>
+                      <MenuItem value={"KOLKATA"}>Kolkata</MenuItem>
+                      <MenuItem value={"AHMEDABAD"}>Ahmedabad</MenuItem>
                     </Select>
                   </FormControl>
                 </div>
