@@ -5,7 +5,6 @@ const Flights = () => {
   return (
     <>
       <SearchBox />
-      {/* <FlightResult/> */}
     </>
   );
 };
