@@ -37,7 +37,9 @@ const SearchBox = () => {
 
   const handleSearch = async () => {
     return await axios
-      .get(`https://tour-and-travel-f248c-default-rtdb.asia-southeast1.firebasedatabase.app/flights.json?q=${from}`)
+      .get(
+        `https://tour-and-travel-f248c-default-rtdb.asia-southeast1.firebasedatabase.app/flights.json?q=${from}`
+      )
       .then((response) => handleNewSearch(response.data))
       .catch((err) => console.log(err));
   };
@@ -70,7 +72,9 @@ const SearchBox = () => {
 
   const loadFlightData = async () => {
     return await axios
-      .get("https://tour-and-travel-f248c-default-rtdb.asia-southeast1.firebasedatabase.app/flights.json")
+      .get(
+        "https://tour-and-travel-f248c-default-rtdb.asia-southeast1.firebasedatabase.app/flights.json"
+      )
       .then((response) => setData(response.data))
       .catch((err) => console.log(err));
   };
@@ -160,7 +164,24 @@ const SearchBox = () => {
                       <MenuItem value={"CHENNAI"}>Chennai</MenuItem>
                       <MenuItem value={"HYDERABAD"}>Hyderabad</MenuItem>
                       <MenuItem value={"KOLKATA"}>Kolkata</MenuItem>
-                      <MenuItem value={"AHMEDABAD"}>Ahmedabad</MenuItem>
+
+                      <MenuItem value={"JAIPUR"}>Jaipur</MenuItem>
+                      <MenuItem value={"LUCKNOW"}>Lucknow</MenuItem>
+                      <MenuItem value={"GOA"}>Goa</MenuItem>
+                      <MenuItem value={"BHUBANESWAR"}>Bhubaneswar</MenuItem>
+                      <MenuItem value={"VARANASI"}>Varanasi</MenuItem>
+                      <MenuItem value={"COIMBATORE"}>Coimbatore</MenuItem>
+                      <MenuItem value={"NAGPUR"}>Nagpur</MenuItem>
+                      <MenuItem value={"RAIPUR"}>Raipur</MenuItem>
+                      <MenuItem value={"INDORE"}>Indore</MenuItem>
+                      <MenuItem value={"VISHAKHAPATNAM"}>
+                        Visakhapatnam
+                      </MenuItem>
+                      <MenuItem value={"VIZAG"}>Vizag</MenuItem>
+                      <MenuItem value={"BHOPAL"}>Bhopal</MenuItem>
+                      <MenuItem value={"RANCHI"}>Ranchi</MenuItem>
+                      <MenuItem value={"SURAT"}>Surat</MenuItem>
+                      <MenuItem value={"KOCHI"}>Kochi</MenuItem>
                     </Select>
                   </FormControl>
                 </div>
@@ -192,6 +213,23 @@ const SearchBox = () => {
                       <MenuItem value={"HYDERABAD"}>Hyderabad</MenuItem>
                       <MenuItem value={"KOLKATA"}>Kolkata</MenuItem>
                       <MenuItem value={"AHMEDABAD"}>Ahmedabad</MenuItem>
+                      <MenuItem value={"JAIPUR"}>Jaipur</MenuItem>
+                      <MenuItem value={"LUCKNOW"}>Lucknow</MenuItem>
+                      <MenuItem value={"GOA"}>Goa</MenuItem>
+                      <MenuItem value={"BHUBANESWAR"}>Bhubaneswar</MenuItem>
+                      <MenuItem value={"VARANASI"}>Varanasi</MenuItem>
+                      <MenuItem value={"COIMBATORE"}>Coimbatore</MenuItem>
+                      <MenuItem value={"NAGPUR"}>Nagpur</MenuItem>
+                      <MenuItem value={"RAIPUR"}>Raipur</MenuItem>
+                      <MenuItem value={"INDORE"}>Indore</MenuItem>
+                      <MenuItem value={"VISHAKHAPATNAM"}>
+                        Visakhapatnam
+                      </MenuItem>
+                      <MenuItem value={"VIZAG"}>Vizag</MenuItem>
+                      <MenuItem value={"BHOPAL"}>Bhopal</MenuItem>
+                      <MenuItem value={"RANCHI"}>Ranchi</MenuItem>
+                      <MenuItem value={"SURAT"}>Surat</MenuItem>
+                      <MenuItem value={"KOCHI"}>Kochi</MenuItem>
                     </Select>
                   </FormControl>
                 </div>
