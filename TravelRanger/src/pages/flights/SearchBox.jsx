@@ -45,7 +45,8 @@ const SearchBox = () => {
   };
 
   const handleNewSearch = (a) => {
-    let c = a.filter((e) => {
+    const dataArray = Object.values(a);
+    let c = dataArray.filter((e) => {
       return e.from === from && e.to === to;
     });
 
