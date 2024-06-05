@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 const FlightData = () => {
+  const navigate = useNavigate();
   const [airline, setAirline] = useState("");
   const [number, setNumber] = useState("");
   const [from, setFrom] = useState("");
@@ -33,7 +34,11 @@ const FlightData = () => {
       }
     )
       .then((response) => response.json())
-      .then((data) => console.log(data))
+      .then((data) => {
+        console.log(data);
+        alert("Form submitted successfully");
+        navigate("/admin");
+      })
       .catch((error) => {
         console.error("Error:", error);
       });
