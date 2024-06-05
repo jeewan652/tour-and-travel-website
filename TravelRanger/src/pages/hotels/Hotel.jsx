@@ -883,7 +883,7 @@ const Hotel = () => {
                   key={e.id}
                   price={e.grayText}
                   dscprice={e.discprice}
-                  name={e.blueText}
+                  name={e.wordBreak}
                   image={e.img}
                   imgThumb1={e.imgThumb1}
                   imgThumb2={e.imgThumb2}
@@ -892,7 +892,7 @@ const Hotel = () => {
                   rating={e.rating}
                   ratingText={e.ratingText}
                   location={e.pc__html}
-                  location2={e.wordBreak}
+                  location2={e.blueText}
                   item={e.persuasion__item}
                   cancellation={e.cancellation}
                   freecancellation={e.freecanc}

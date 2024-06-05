@@ -11,12 +11,6 @@ const CheckboxComponent = () => {
         justifyContent: 'space-between',
         alignContent: 'flex-start'
       }} >
-       
-
-
-        
-         
-
           <Typography variant="h6">Hotel Chains</Typography>
           <FormControlLabel
             control={<Checkbox value="Accor - Novotel & ibis" />}
