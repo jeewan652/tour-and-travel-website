@@ -164,19 +164,22 @@ export default function Header() {
           aria-label="basic tabs example"
           variant="scrollable"
           scrollButtons="auto"
+          style={{marginLeft:'6vw'}}
         >
-          <Tab icon={<FlightIcon />} label={"FLights"} {...a11yProps(0)} />
-          <Tab icon={<HotelIcon />} label="Hotels" {...a11yProps(1)} />
-          <Tab icon={<HouseIcon />} label="Home Stays" {...a11yProps(2)} />
+          <Tab icon={<FlightIcon />} label={"FLights"} {...a11yProps(0)}  />
+          <Tab icon={<HotelIcon />} label="Hotels" {...a11yProps(1)} style={{marginLeft:'40px'}} />
+          <Tab icon={<HouseIcon />} label="Home Stays" {...a11yProps(2)}style={{marginLeft:'40px'}} />
           <Tab
             icon={<HolidayVillageIcon />}
             label="Holiday Packages"
             {...a11yProps(3)}
+            style={{marginLeft:'40px'}}
           />
           <Tab
             icon={<TrainIcon />}
             label="Trains"
             {...a11yProps(7)}
+            style={{marginLeft:'40px'}}
           />
         </Tabs>
       </Box>

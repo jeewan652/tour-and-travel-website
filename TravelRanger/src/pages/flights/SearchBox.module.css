@@ -412,3 +412,55 @@ p {
     width: 50%;
   }
 }
+
+
+
+.bookNowbtn {
+  width: 180px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background: #040f16;
+  color: #f5f5f5;
+}
+
+.bookNowbtn:hover {
+  box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+.bookNowbtn .bookNowicon {
+  position: absolute;
+  height: 40px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.bookNowbtn .bookNowtext {
+  transform: translateX(55px);
+}
+
+.bookNowbtn:hover .bookNowicon {
+  width: 175px;
+}
+
+.bookNowbtn:hover .bookNowtext {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.bookNowbtn:focus {
+  outline: none;
+}
+
+.bookNowbtn:active .bookNowicon {
+  transform: scale(0.85);
+}
